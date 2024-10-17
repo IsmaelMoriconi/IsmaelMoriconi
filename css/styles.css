@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.671);
+    color: rgba(247, 249, 250, 0.885);
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: rgb(55, 233, 156);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+#projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    background: #fff;
+    padding: 10px;
+}
+
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+form button {
+    background: #3745de;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0707f7;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #f8f3f3;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
